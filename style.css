@@ -4,10 +4,22 @@ body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
 }
+.greybox {
 
+  background-color: lightgray;
+  padding: 40px;
+  margin: 40px;
+  width: 300px;
+  height: 150px;
+}
+
+.alternate {
+  box-sizing: border-box;
+}
+    
 h1 {
   font-style: italic;
-  color: #373fff;
+  color: #000000;
 }
 table, th, td {
   border: 1px dashed Blue;
@@ -17,3 +29,67 @@ th, td {
   padding: 5px;
   text-align: left;    
 }
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  
+  padding: 50px;
+  margin:20px;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.redbox {
+  background-color: red;
+}
+.yellowbox {
+  background-color: yellow;
+}
+.greenbox {
+  background-color: green;
+}
+.pinkbox {
+  background-color: pink;
+}
+.orangebox {
+  background-color: orange;
+}
+.bluebox {
+  background-color: blue;
+}
+.threecol{width: 33.33%;}
+.twocol{width: 50%;}
+.onecol{width: 100%;}
+
+/* unvisited link */
+a:link {
+  color: red;
+  border: 1px solid red;
+  padding:10px;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+  background-color:lightblue;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+
+    
