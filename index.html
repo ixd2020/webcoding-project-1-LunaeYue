@@ -4,143 +4,263 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title></title>
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="/footer.css" />
     <script src="/script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+
+    
   </head>
   <body>
-    <h1>Hi there!</h1>
+    <div class="w3-top">
+      <div
+        class="w3-bar w3-white w3-padding w3-card"
+        style="letter-spacing:4px;"
+      >
+        <a href="index.html" class="w3-bar-item w3-button">Vincent Van Gogh</a>
 
-    <p>
-      <a href="/IAmAFile.html">Go to file 1</a>/
-      <a href="/trycss.html">Go to boxes</a>/
-      <a href="#File info">Go to File info</a>
-    </p>
+        <div class="w3-right w3-hide-small">
+          <a href="collection.html" class="w3-bar-item w3-button">Collection</a>
+          <a href="about.html" class="w3-bar-item w3-button">About</a>
+          <a href="letters.html" class="w3-bar-item w3-button">Letters</a>
+        </div>
+      </div>
+    </div>
 
-    <table style="width:100%">
-      <tr>
-        <th>Name:</th>
-        <td>MR GOOF</td>
-      </tr>
-      <tr>
-        <th rowspan="2">Telephone:</th>
-        <td>NIL</td>
-      </tr>
-      <tr>
-        <td>55577855</td>
-      </tr>
-    </table>
+    <div class="hero-image">
+      <div class="hero-text">
+        <hr />
+        <h1 style="font-size:50px">Vincent Van Gogh Collection</h1>
+        <p>
+          Vincent van Gogh (1853–1890) is world famous. Learn about his life,
+          read his letters, or explore his paintings and drawings.
+        </p>
+        <hr />
+      </div>
+    </div>
 
-    <ol>
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
+    <h1>
+      <br />
+      <center>In this website</center>
+    </h1>
+    <div class="para1">
+      <p>
+        You will be able to see the <b>life story</b> and different
+        <b>artworks</b> of the artist Vincent Van Gogh.Van Gogh was known to be
+        an artist who lived a majority of his life in solitude. He was known to
+        transmute vibrant colors and great detailing of his everyday
+        observations onto the canvas. The poor artist died with little money and
+        during his lifetime, he managed to sell only one painting. However,
+        posthumously he came to be known as a global sensation, an artist of
+        global recognition.
+      </p>
+    </div>
 
-      <li>Apple</li>
-      <li>Banana</li>
-      <li>Carrot</li>
-    </ol>
-    <style>
-      img {
-        float: right;
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img
+          src="https://cdn.glitch.com/e4db104f-5ded-4060-8abe-39a1caa65d8b%2Fvangoghmuseum-d0420V1962-800.jpg?v=1607592291721"
+          style="width:100%"
+        />
+        <div class="text">Gate in the Paris Ramparts</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img
+          src="https://cdn.glitch.com/e4db104f-5ded-4060-8abe-39a1caa65d8b%2Fvangoghmuseum-s0047V1962-800.jpg?v=1608012417390"
+          style="width:100%"
+        />
+        <div class="text">The Bedroom</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img
+          src="https://cdn.glitch.com/e4db104f-5ded-4060-8abe-39a1caa65d8b%2Fvangoghmuseum-d0386M1977-800.jpg?v=1607592378257"
+          style="width:100%"
+        />
+        <div class="text">Landscape with a Stack of Peat and Farmhouses</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img
+          src="https://cdn.glitch.com/e4db104f-5ded-4060-8abe-39a1caa65d8b%2Fvangoghmuseum-s0049V1962-800%20(1).jpg?v=1607592287593"
+          style="width:100%"
+        />
+        <div class="text">Wheatfield with a Reaper</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
       }
-    </style>
 
-    <p></p>
-    <p>
-      <img
-        src="https://cdn.glitch.com/3caa5662-8370-4fb5-b472-0d260f453d50%2F02g1pfot5ds41.jpg?v=1604811683326"
-        width="150"
-        height="150"
-        style="width:170px;height:170px;margin-left:15px;"
-      />
-      Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-      roots in a piece of classical Latin literature from 45 BC, making it over
-      2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
-      College in Virginia, looked up one of the more obscure Latin words,
-      consectetur, from a Lorem Ipsum passage, and going through the cites of
-      the word in classical literature, discovered the undoubtable source.
-    </p>
-    <p>
-      There are many variations of passages of Lorem Ipsum available, but the
-      majority have suffered alteration in some form, by injected humour, or
-      randomised words which don't look even slightly believable. If you are
-      going to use a passage of Lorem Ipsum, you need to be sure there isn't
-      anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-      generators on the Internet tend to repeat predefined chunks as necessary,
-      making this the first true generator on the Internet. It uses a dictionary
-      of over 200 Latin words, combined with a handful of model sentence
-      structures, to generate Lorem Ipsum which looks reasonable. The generated
-      Lorem Ipsum is therefore always free from repetition, injected humour, or
-      non-characteristic words etc.
-    </p>
-    <p>
-      There are many variations of passages of Lorem Ipsum available, but the
-      majority have suffered alteration in some form, by injected humour, or
-      randomised words which don't look even slightly believable. If you are
-      going to use a passage of Lorem Ipsum, you need to be sure there isn't
-      anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-      generators on the Internet tend to repeat predefined chunks as necessary,
-      making this the first true generator on the Internet. It uses a dictionary
-      of over 200 Latin words, combined with a handful of model sentence
-      structures, to generate Lorem Ipsum which looks reasonable. The generated
-      Lorem Ipsum is therefore always free from repetition, injected humour, or
-      non-characteristic words etc.
-    </p>
-    <p>
-      There are many variations of passages of Lorem Ipsum available, but the
-      majority have suffered alteration in some form, by injected humour, or
-      randomised words which don't look even slightly believable. If you are
-      going to use a passage of Lorem Ipsum, you need to be sure there isn't
-      anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-      generators on the Internet tend to repeat predefined chunks as necessary,
-      making this the first true generator on the Internet. It uses a dictionary
-      of over 200 Latin words, combined with a handful of model sentence
-      structures, to generate Lorem Ipsum which looks reasonable. The generated
-      Lorem Ipsum is therefore always free from repetition, injected humour, or
-      non-characteristic words etc.
-    </p>
-    <p>
-      There are many variations of passages of Lorem Ipsum available, but the
-      majority have suffered alteration in some form, by injected humour, or
-      randomised words which don't look even slightly believable. If you are
-      going to use a passage of Lorem Ipsum, you need to be sure there isn't
-      anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-      generators on the Internet tend to repeat predefined chunks as necessary,
-      making this the first true generator on the Internet. It uses a dictionary
-      of over 200 Latin words, combined with a handful of model sentence
-      structures, to generate Lorem Ipsum which looks reasonable. The generated
-      Lorem Ipsum is therefore always free from repetition, injected humour, or
-      non-characteristic words etc.
-    </p>
-    <p>
-      There are many variations of passages of Lorem Ipsum available, but the
-      majority have suffered alteration in some form, by injected humour, or
-      randomised words which don't look even slightly believable. If you are
-      going to use a passage of Lorem Ipsum, you need to be sure there isn't
-      anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-      generators on the Internet tend to repeat predefined chunks as necessary,
-      making this the first true generator on the Internet. It uses a dictionary
-      of over 200 Latin words, combined with a handful of model sentence
-      structures, to generate Lorem Ipsum which looks reasonable. The generated
-      Lorem Ipsum is therefore always free from repetition, injected humour, or
-      non-characteristic words etc.
-    </p>
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
 
-    <h2 id="File info">
-      File Info
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+    <br />
+    <br />
+    <a href="collection.html"
+      ><center>
+        <button class="button button5" >See more of Vincent's artworks</button>
+      </center></a
+    >
+
+    <h2>
+      <br />
+      <br />
+      <center>Facts about Vincent</center>
     </h2>
-    <p>
-      Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum
-      et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
-      This book is a treatise on the theory of ethics, very popular during the
-      Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
-      amet..", comes from a line in section 1.10.32.
-    </p>
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
+    <div class="para1">
+      <p>
+        -His happiest year was in London.<br />
+        -In less than 10 years, he painted almost <b>900</b> paintings.<br />
+        -He is a prolific correspondent.<br />
+        -There is only <b>one</b> painting sold during his lifetime.<br />
+        <br />
+        ...<br />
+      </p>
+      <br />
+      <a href="about.html"
+        ><center>
+          <button class="button6">Know more about Vincent</button>
+        </center></a
+      >
+    </div>
+
+    
+        <h2>
+      <br />
+      <br />
+      <center>His Letters</center>
+    </h2>
+    <div class="para1">
+      <p>
+        Vincent wrote many letters. Most of them are for his brother Theo.<br><br><br>
+         "See, this is what the composition has now become. I’ve painted it on a fairly large canvas, and as the sketch is now, I believe there’s life in it."
+        <br />
+        ...<br />
+      </p>
+      <br />
+      <a href="letters.html"
+        ><center>
+          <button class="button6">View his letters</button>
+        </center></a
+      >
+    </div>
+    
+    
+    
+    <h2>
+      <br />
+      <br />
+      <center>Starry Starry Night</center>
+    </h2>
+    
+    <div class="para1">
+      <p>
+        "Vincent" is a song by Don McLean written as a tribute to Vincent van
+        Gogh. It is often erroneously titled after its opening refrain, "Starry
+        Starry Night", a reference to Van Gogh's 1889 painting The Starry Night.
+      </p>
+    </div>
+    <center>
+      <iframe
+        width="800"
+        height="515"
+        src="https://www.youtube.com/embed/oxHnRfhDmrk"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </center>
+
+ 
+    
+    
+    
+    
+    
+    
+    
+    <br><br><br>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <hr />
+            <br />
+            <h6>About</h6>
+            <p class="text-justify">
+              <i>Vincent-html </i> is a website created just for completing
+              school assignment. All infomations are from existing online
+              webpages.
+            </p>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li>
+                <a href="https://www.vangoghmuseum.nl/en/collection"
+                  >Van Gogh Museum</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.biography.com/news/vincent-van-gogh-biography-facts"
+                  >Facts about Vincent Van Gogh</a
+                >
+              </li>
+              <li>
+                <a href="https://www.biography.com/artist/vincent-van-gogh"
+                  >Vincent Van Gogh Biography</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
